@@ -207,7 +207,7 @@ public sealed class PosterUiState {
   public object Loading : PosterUiState()
 
   public data class Success(
-    public val `data`: PosterExtensive,
+    public val `data`: Poster,
   ) : PosterUiState()
 }
 ```
