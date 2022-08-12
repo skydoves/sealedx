@@ -14,7 +14,7 @@
 
 ## Why SealedX?
 
-SealedX generates extensive sealed classes & interfaces based on common sealed classes for each different model. You can reduce writing repeated sealed classes for every different model by auto-generating based on KSP [Kotlin Symbol Processor](https://kotlinlang.org/docs/ksp-overview.html).<br><br>
+SealedX generates extensive sealed classes & interfaces based on common sealed classes for each different model. You can reduce writing repeated sealed classes for every different model by auto-generating based on KSP ([Kotlin Symbol Processor](https://kotlinlang.org/docs/ksp-overview.html)).<br><br>
 You can massively reduce writing repeated files such as `_UiState` sealed interfaces if your project is based on MVI architecture.
 
 <p align="center">
