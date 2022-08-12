@@ -58,7 +58,7 @@ plugins {
 
 ### 2. Add SealedX dependencies
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.github.skydoves/sealedx.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.github.skydoves%22%20AND%20a:%22sealedx%22)
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.skydoves/sealedx-core.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.github.skydoves%22%20AND%20a:%22sealedx-core%22)
 
 Add the dependency below into your **module**'s `build.gradle` file:
 
