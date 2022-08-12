@@ -18,7 +18,7 @@ SealedX generates extensive sealed classes & interfaces based on common sealed c
 You can massively reduce writing repeated files such as `_UiState` sealed interfaces if your project is based on MVI architecture.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/24237865/184180007-b55615d1-eb46-45c7-9dcf-3f9174e97861.png" width="700"/>
+<img src="https://user-images.githubusercontent.com/24237865/184303312-9df53e1e-9ec2-448c-9d93-3a7265ada7ec.png" width="760"/>
 </p>
 
 ## Gradle Setup
