@@ -21,6 +21,11 @@ You can massively reduce writing repeated files such as `_UiState` sealed interf
 <img src="https://user-images.githubusercontent.com/24237865/184303312-9df53e1e-9ec2-448c-9d93-3a7265ada7ec.png" width="760"/>
 </p>
 
+## Use Cases
+You can find some use cases from GitHub repositories below:
+
+- WhatsApp Clone Compose: [Introducing SealedX KSP library](https://github.com/GetStream/whatsApp-clone-compose/pull/1).
+
 ## Gradle Setup
 
 To use [KSP (Kotlin Symbol Processing)](https://kotlinlang.org/docs/ksp-quickstart.html) and SealedX library in your project, you need to follow steps below.
