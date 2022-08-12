@@ -22,7 +22,7 @@ You can massively reduce writing repeated files such as `_UiState` sealed interf
 </p>
 
 ## Use Cases
-You can find some use cases from GitHub repositories below:
+You can see some use cases on GitHub repositories below:
 
 - WhatsApp Clone Compose: [Introducing SealedX KSP library](https://github.com/GetStream/whatsApp-clone-compose/pull/1).
 
