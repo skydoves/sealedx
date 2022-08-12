@@ -1,0 +1,26 @@
+public abstract interface class com/skydoves/sealedx/core/Extensive {
+}
+
+public abstract interface annotation class com/skydoves/sealedx/core/annotations/ExtensiveModel : java/lang/annotation/Annotation {
+	public static final field Companion Lcom/skydoves/sealedx/core/annotations/ExtensiveModel$Companion;
+	public static final field PARAM_NAME Ljava/lang/String;
+	public static final field PARAM_TYPE Ljava/lang/String;
+	public abstract fun name ()Ljava/lang/String;
+	public abstract fun type ()Ljava/lang/Class;
+}
+
+public final class com/skydoves/sealedx/core/annotations/ExtensiveModel$Companion {
+	public static final field PARAM_NAME Ljava/lang/String;
+	public static final field PARAM_TYPE Ljava/lang/String;
+}
+
+public abstract interface annotation class com/skydoves/sealedx/core/annotations/ExtensiveSealed : java/lang/annotation/Annotation {
+	public static final field Companion Lcom/skydoves/sealedx/core/annotations/ExtensiveSealed$Companion;
+	public static final field PARAM_MODELS Ljava/lang/String;
+	public abstract fun models ()[Lcom/skydoves/sealedx/core/annotations/ExtensiveModel;
+}
+
+public final class com/skydoves/sealedx/core/annotations/ExtensiveSealed$Companion {
+	public static final field PARAM_MODELS Ljava/lang/String;
+}
+
