@@ -9,7 +9,7 @@
 </p><br>
 
 <p align="center">
-🎲 Kotlin Symbol Processor to auto-generate extensive sealed classes and interfaces.<br><br>
+🎲 Kotlin Symbol Processor to auto-generate extensive sealed classes and interfaces for Android and Kotlin.<br><br>
 </p>
 
 ## Why SealedX?
