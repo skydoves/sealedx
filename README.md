@@ -22,9 +22,11 @@ You can massively reduce writing repeated files such as `_UiState` sealed interf
 </p>
 
 ## Use Cases
-You can see some use cases on GitHub repositories below:
 
-- WhatsApp Clone Compose: [Introducing SealedX KSP library](https://github.com/GetStream/whatsApp-clone-compose/pull/1).
+If you want to learn more about how to migrate and use cases, check out the repositories below:
+
+- **[WhatsApp Clone Compose](https://github.com/GetStream/whatsApp-clone-compose/pull/1)**
+- **[Now in Android](https://github.com/advocacies/nowinandroid/pull/1)**
 
 ## Gradle Setup
 
