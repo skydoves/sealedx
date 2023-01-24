@@ -35,7 +35,7 @@ fun PosterItem(poster: Poster) {
     modifier = Modifier.fillMaxSize()
   ) {
     GlideImage(
-      imageModel = poster.poster,
+      imageModel = { poster.poster },
       modifier = Modifier.aspectRatio(0.8f)
     )
 
