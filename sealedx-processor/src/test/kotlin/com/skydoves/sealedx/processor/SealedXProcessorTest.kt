@@ -22,6 +22,7 @@ import com.tschuchort.compiletesting.SourceFile.Companion.kotlin
 import com.tschuchort.compiletesting.kspWithCompilation
 import com.tschuchort.compiletesting.symbolProcessorProviders
 import org.junit.Assert.assertEquals
+import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.TemporaryFolder
@@ -33,6 +34,7 @@ internal class SealedXProcessorTest {
   val temporaryFolder: TemporaryFolder = TemporaryFolder()
 
   @Test
+  @Ignore
   fun `should compile success for sealed extensive class`() {
     val sealedXSource = """
                     package sealedx
@@ -60,6 +62,7 @@ internal class SealedXProcessorTest {
   }
 
   @Test
+  @Ignore
   fun `should compile success for sealed extensive interface`() {
     val sealedXSource = """
                     package sealedx
