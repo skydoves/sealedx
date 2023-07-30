@@ -43,7 +43,7 @@ Add the KSP plugin below into your **module**'s `build.gradle` file:
 
 ```kotlin
 plugins {
-    id("com.google.devtools.ksp") version "1.8.10-1.0.9"
+    id("com.google.devtools.ksp") version "1.9.0-1.0.12"
 }
 ```
 </details>
@@ -53,7 +53,7 @@ plugins {
 
 ```kotlin
 plugins {
-    id("com.google.devtools.ksp") version "1.8.10-1.0.9"
+    id("com.google.devtools.ksp") version "1.9.0-1.0.12"
 }
 ```
 </details>
@@ -68,8 +68,8 @@ Add the dependency below into your **module**'s `build.gradle` file:
 
 ```gradle
 dependencies {
-    implementation("com.github.skydoves:sealedx-core:1.0.1")
-    ksp("com.github.skydoves:sealedx-processor:1.0.1")
+    implementation("com.github.skydoves:sealedx-core:1.0.2")
+    ksp("com.github.skydoves:sealedx-processor:1.0.2")
 }
 ```
 
