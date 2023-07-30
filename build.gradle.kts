@@ -15,9 +15,12 @@ apiValidation {
 }
 
 subprojects {
+  tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+    kotlinOptions.jvmTarget = libs.versions.jvmTarget.get()
+  }
+
   if (name != "app") {
     tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-      kotlinOptions.jvmTarget = libs.versions.jvmTarget.get()
       kotlinOptions.freeCompilerArgs += listOf(
         "-Xexplicit-api=strict",
         "-Xopt-in=com.google.devtools.ksp.KspExperimental"

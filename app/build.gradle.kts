@@ -5,6 +5,7 @@ plugins {
 }
 
 android {
+  namespace = "com.skydoves.sealedxdemo"
   compileSdk = Configuration.compileSdk
 
   defaultConfig {
@@ -23,7 +24,12 @@ android {
     kotlinCompilerExtensionVersion = libs.versions.androidxComposeCompiler.get()
   }
 
-  packagingOptions {
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+  }
+
+  packaging {
     resources {
       excludes.add("/META-INF/{AL2.0,LGPL2.1}")
     }
