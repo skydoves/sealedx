@@ -68,8 +68,8 @@ Add the dependency below into your **module**'s `build.gradle` file:
 
 ```gradle
 dependencies {
-    implementation("com.github.skydoves:sealedx-core:1.0.2")
-    ksp("com.github.skydoves:sealedx-processor:1.0.2")
+    implementation("com.github.skydoves:sealedx-core:1.0.3")
+    ksp("com.github.skydoves:sealedx-processor:1.0.3")
 }
 ```
 
