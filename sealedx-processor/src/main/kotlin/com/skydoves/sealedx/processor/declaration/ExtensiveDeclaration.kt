@@ -16,9 +16,9 @@
 
 package com.skydoves.sealedx.processor.declaration
 
+import com.google.devtools.ksp.symbol.KSAnnotation
 import com.google.devtools.ksp.symbol.KSClassDeclaration
 import com.google.devtools.ksp.symbol.KSType
-import com.google.devtools.ksp.symbol.impl.binary.KSAnnotationDescriptorImpl
 import com.skydoves.sealedx.core.annotations.ExtensiveModel
 import com.skydoves.sealedx.core.annotations.ExtensiveSealed
 import com.skydoves.sealedx.processor.model.ExtensiveModelBag
@@ -51,7 +51,7 @@ internal class ExtensiveDeclaration(
 
     // Extract a list of KSType from the class type of the array of `ExtensiveModel`.
     val modelsKSTypesDescriptor =
-      (arguments as ArrayList<*>).map { it as KSAnnotationDescriptorImpl }
+      (arguments as ArrayList<*>).map { it as KSAnnotation }
     models = modelsKSTypesDescriptor.map { kSAnnotationDescriptor ->
       val name = kSAnnotationDescriptor.arguments.first { KSValueArgument ->
         KSValueArgument.name?.asString() == ExtensiveModel.PARAM_NAME
