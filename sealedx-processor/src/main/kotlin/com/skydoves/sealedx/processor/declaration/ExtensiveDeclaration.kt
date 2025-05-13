@@ -19,7 +19,6 @@ package com.skydoves.sealedx.processor.declaration
 import com.google.devtools.ksp.symbol.KSAnnotation
 import com.google.devtools.ksp.symbol.KSClassDeclaration
 import com.google.devtools.ksp.symbol.KSType
-import com.google.devtools.ksp.symbol.impl.binary.KSAnnotationDescriptorImpl
 import com.skydoves.sealedx.core.annotations.ExtensiveModel
 import com.skydoves.sealedx.core.annotations.ExtensiveSealed
 import com.skydoves.sealedx.processor.model.ExtensiveModelBag
