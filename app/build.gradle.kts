@@ -1,6 +1,7 @@
 plugins {
   id(libs.plugins.android.application.get().pluginId)
   id(libs.plugins.kotlin.android.get().pluginId)
+  id(libs.plugins.compose.compiler.get().pluginId)
   id(libs.plugins.ksp.get().pluginId) version libs.versions.ksp.get()
 }
 
@@ -18,10 +19,6 @@ android {
 
   buildFeatures {
     compose = true
-  }
-
-  composeOptions {
-    kotlinCompilerExtensionVersion = libs.versions.androidxComposeCompiler.get()
   }
 
   compileOptions {
