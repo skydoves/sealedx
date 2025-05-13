@@ -6,14 +6,9 @@ plugins {
   alias(libs.plugins.nexusPlugin)
   alias(libs.plugins.spotless)
   alias(libs.plugins.dokka)
-  alias(libs.plugins.kotlinBinaryCompatibilityValidator)
 }
 
 apply(from ="${rootDir}/scripts/publish-root.gradle")
-
-apiValidation {
-  ignoredProjects.addAll(listOf("app"))
-}
 
 subprojects {
   tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
