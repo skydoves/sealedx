@@ -3,12 +3,12 @@ plugins {
   alias(libs.plugins.android.library) apply false
   alias(libs.plugins.kotlin.android) apply false
   alias(libs.plugins.compose.compiler) apply false
-  alias(libs.plugins.nexusPlugin)
+  alias(libs.plugins.nexus.plugin)
   alias(libs.plugins.spotless)
   alias(libs.plugins.dokka)
 }
 
-apply(from ="${rootDir}/scripts/publish-root.gradle")
+apply(from ="${rootDir}/scripts/publish-module.gradle.kts")
 
 subprojects {
   tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {

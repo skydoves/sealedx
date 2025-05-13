@@ -1,14 +1,23 @@
 plugins {
   kotlin("jvm")
+  id(libs.plugins.nexus.plugin.get().pluginId)
 }
 
-rootProject.extra.apply {
-  set("PUBLISH_GROUP_ID", Configuration.artifactGroup)
-  set("PUBLISH_ARTIFACT_ID", "sealedx-processor")
-  set("PUBLISH_VERSION", rootProject.extra.get("rootVersionName"))
-}
+apply(from ="${rootDir}/scripts/publish-module.gradle.kts")
 
-apply(from ="${rootDir}/scripts/publish-module.gradle")
+mavenPublishing {
+  val artifactId = "sealedx-processor"
+  coordinates(
+    Configuration.artifactGroup,
+    artifactId,
+    rootProject.extra.get("libVersion").toString()
+  )
+
+  pom {
+    name.set(artifactId)
+    description.set("Kotlin Symbol Processor that auto-generates extensive sealed classes and interfaces for Android and Kotlin.")
+  }
+}
 
 dependencies {
   implementation(project(":sealedx-core"))
