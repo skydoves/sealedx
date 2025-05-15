@@ -43,7 +43,7 @@ Add the KSP plugin below into your **module**'s `build.gradle` file:
 
 ```kotlin
 plugins {
-    id("com.google.devtools.ksp") version "1.9.0-1.0.12"
+    id("com.google.devtools.ksp") version "2.1.20-2.0.1"
 }
 ```
 </details>
@@ -53,7 +53,7 @@ plugins {
 
 ```kotlin
 plugins {
-    id("com.google.devtools.ksp") version "1.9.0-1.0.12"
+    id("com.google.devtools.ksp") version "2.1.20-2.0.1"
 }
 ```
 </details>
